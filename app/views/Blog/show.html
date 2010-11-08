@@ -1,0 +1,50 @@
+#{extends 'content.html' /}
+#{set title:post.title /}
+
+<h1 id="title">${post.title}</h1>
+<p>
+    ${post.content.nl2br()}
+</p>
+
+#{if comments}
+<h3>&{'blog.show.Comments'} (<a href="#" onclick="$('#commentForm').show();">&{'blog.show.post_comment'}</a>)</h3>
+<ul id="comments">
+    #{list items:comments, as:'comment'}
+    <li>
+        <strong>&{'global.By'} ${comment.author} (${comment.date.format("dd")} &{'global.month'+ comment.date.format("MM")} ${comment.date.format("yyyy")})</strong>
+        <p>
+            ${comment.comment}
+        </p>
+    </li>
+    #{/list}
+</ul>
+#{/if}
+#{else}
+<h3>&{'blog.show.No_comments'} (<a href="#" onclick="$('#commentForm').show();">&{'blog.show.post_comment'}</a>)</h3>
+#{/else}
+
+<form id="commentForm" action="@{Blog.newComment(post.slug)}" method="POST" accept-charset="utf-8">
+    <p>
+        <label for="author">&{'blog.show.Your_name'}</label>
+        <input type="text" name="author" value="" id="author">
+    </p>
+
+    <p>
+        <label for="comment">&{'blog.show.Your_comment'}</label><br />
+        <textarea name="comment" rows="3" cols="40"></textarea>
+    </p>
+
+    <input type="hidden" name="uuid" value="${uuid}"/>
+
+    <p><input type="submit" value="&{'blog.show.Post_your_comment'}"></p>
+</form>
+
+#{if posts}
+<h2 id="archives" class="heading">&{'blog.show.Other_posts'}</h2>
+
+<ul class="list">
+    #{list items:posts, as:'post'}
+    <li><a href="@{Blog.show(post.id)}">${post.title}</a><span class="date">${post.date.format("dd")} &{'global.month'+ post.date.format("MM")} ${post.date.format("yyyy")}</span><div style="clear: both;"></div></li>
+    #{/list}
+</ul>
+#{/if}

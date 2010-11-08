@@ -1,0 +1,56 @@
+#{extends 'main.html' /}
+
+<div id="blog">
+    <div id="header">
+        <img class="avatar" src="/public/images/avatar.jpg" />
+        <h1><a href="/">${blogTitle}</a></h1>
+        <div id="subtitle">
+            <span>expert en conception d'applications web.</span>
+        </div>
+		<hr />
+        <div id="contact">
+            <p class="accent">(+33) 6 78 18 96 46</p>
+            <a target="_blank" href="http://twitter.com/loic_guillois">
+                <strong>twitter</strong>
+            </a>
+            |
+            <a href="http://www.linkedin.com/in/loicguillois" style="display: inline;">
+                <strong>&{'blog.join_network'}</strong>
+            </a>
+            <br/>
+            75, Boulevard Michelet
+            <br/>
+            44300 Nantes
+            <br/>
+            <a href="#" rel="rf/siolliugciol//tcatnoc" class="email">contact [ at ] loicguillois [ . ] fr</a>
+            <div class="company">
+            	&rarr; <a  href="http://www.stand44.com">Stand44</a>
+			</div>
+        </div>
+        <div style="clear: both;"></div>
+	#{if session.logged}
+        <form id="logout" action="@{Admin.logout}" method="POST" accept-charset="utf-8">
+            <input type="submit" value="&{'admin.logout'}" />
+        </form>
+	#{/if}
+    </div>
+    <div id="content">
+
+	#{if flash.error}
+        <div class="error">
+	${flash.error}
+        </div>
+	#{/if}
+
+	#{if flash.success}
+        <div class="success">
+	${flash.success}
+        </div>
+        #{/if}
+
+	#{doLayout /}
+    </div>
+    <div id="footer">
+        &{'footer.text'}
+    </div>
+</div>

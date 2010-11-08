@@ -1,0 +1,16 @@
+15:31:44,523 INFO  ~ 
+15:31:44,724 INFO  ~ Starting /Users/lgu/Documents/DaWeb/Projets/internes/smoke-machine
+15:31:44,759 INFO  ~ Module rss is available (/Users/lgu/Documents/DaWeb/Projets/internes/smoke-machine/modules/rss)
+15:31:44,759 INFO  ~ Module siena is available (/Developer/Library/Frameworks/play/modules/siena)
+15:31:44,759 INFO  ~ Module gae is available (/Developer/Library/Frameworks/play/modules/gae)
+15:31:46,784 WARN  ~ 
+15:31:46,784 WARN  ~ Google App Engine module
+15:31:46,784 WARN  ~ ~~~~~~~~~~~~~~~~~~~~~~~
+15:31:46,784 WARN  ~ No Google App Engine environment found. Setting up a development environement
+15:31:47,079 WARN  ~ Don't forget to define your GAE application id in the 'war/WEB-INF/appengine-web.xml' file
+15:31:47,079 WARN  ~ 
+15:31:47,079 WARN  ~ You're running Play! in DEV mode
+15:31:47,556 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+15:32:01,239 INFO  ~ Application 'smoke-machine' is started !
+15:32:01,870 INFO  ~ Time to load datastore: 206 ms
+15:32:29,758 WARN  ~ Corrupted HTTP session from 127.0.0.1

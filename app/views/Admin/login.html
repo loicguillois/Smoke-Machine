@@ -1,0 +1,19 @@
+#{extends 'main.html' /}
+
+<h1 id="administration_area">&{'admin.login.Administration_area'}</h1>
+
+<form id="loginForm" action="@{Admin.authenticate}" method="POST" accept-charset="utf-8">
+
+    #{if flash.error}
+    <div class="error">
+	${flash.error}
+    </div>
+    #{/if}
+
+    <p>
+        <label for="password">&{'admin.login.password'}</label>
+        <input type="password" name="password" value="" id="password" />
+        <input type="submit" value="&{'global.Enter'}" />
+    </p>
+
+</form>

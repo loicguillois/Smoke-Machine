@@ -1,0 +1,70 @@
+# Global
+
+global.By=De
+global.Enter=Entrer
+global.or=ou
+
+global.month01=Janvier
+global.month02=F&eacute;vrier
+global.month03=Mars
+global.month04=Avril
+global.month05=Mai
+global.month06=Juin
+global.month07=Juillet
+global.month08=Ao&ucirc;t
+global.month09=Septembre
+global.month10=Octobre
+global.month11=Novembre
+global.month12=D&eacute;cembre
+
+# Blog
+
+index.title=Accueil
+index.no_post=Désolé, il n'y a actuellement aucun billet
+
+blog.show.security.title=Securit&eacute;
+blog.show.security.sentence=Recopiez les chiffres et lettres
+blog.show.Comments=Commentaires
+blog.show.post_comment=&Eacute;crire un commentaire
+blog.show.No_comments=Aucun commentaire
+blog.show.Your_name=Votre nom
+blog.show.Your_comment=Votre commentaire
+blog.show.Post_your_comment=Envoyer votre commentaire &rarr;
+blog.show.Other_posts=Archives.
+
+blog.join_network=rejoignez mon r&eacute;seau LinkedIn
+
+blog.flash.wrong_security_code=Mauvais code de s&eacute;curit&eacute;
+
+blog.rss.posts=RSS Billets
+blog.rss.comments=RSS Commentaires
+
+# Admin
+
+admin.login.Administration_area=Zone d'administration
+admin.logout=D&eacute;connexion &rarr;
+admin.login.password=Quel est le mot de passe?
+admin.index.All_posts=Tout les billets
+admin.index.plus_new_post=+ nouveau billet
+admin.index.No_post=Il n'y a aucun billet
+admin.index.Do_you_want_to=Est-ce que vous voulez
+admin.index.create_a_new_one=en cr&eacute;er un nouveau
+admin.new_post.New_post=Nouveau billet
+admin.new_post.Title=Titre
+admin.new_post.Content=Contenu
+admin.new_post.Create_it=Cr&eacute;er &rarr;
+
+admin.edit_post.Edit_post=Editer le billet
+admin.edit_post.Save_it=Enregistrer &rarr;
+admin.edit_post.Delete_this_post=Supprimer ce billet
+admin.edit_post.back=Revenir à la liste des billets
+
+admin.flash.wrong_password=Mauvais mot de passe
+admin.flash.disconnected=Vous &ecirc;tes maintenant d&eacute;connect&eacute;
+admin.flash.post_deleted=Le billet a &eacute;t&eacute supprim&eacute;
+admin.flash.post_created=Le billet a &eacute;t&eacute cr&eacute&eacute;
+admin.flash.post_saved=Le billet a &eacute;t&eacute enregistr&eacute;
+
+# Footer
+
+footer.text=© 2009 Loïc Guillois - Licence <a href="http://creativecommons.org/licenses/by-sa/2.0/fr/deed.fr">Creative Commons</a> - Site propulsé par <a href="http://www.playframework.org">Play!</a> et hébergé dans le nuage <a href="http://code.google.com/appengine">Google App Engine</a>.

@@ -1,0 +1,23 @@
+#{extends 'content.html' /}
+
+<h1>&{'admin.edit_post.Edit_post'}</h1>
+
+<form action="@{Admin.savePost(post.id)}" method="POST" accept-charset="utf-8">	
+    <p>
+        <label for="title">&{'admin.new_post.Title'}</label>
+        <input type="text" name="title" value="${post.title}" id="title" />
+    </p>
+
+    <p>
+        <label for="pcontent">&{'admin.new_post.Content'}</label>
+        <textarea name="content" id="pcontent" rows="8" cols="40">${post.content}</textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="&{'admin.edit_post.Save_it'}">
+    </p>
+</form>
+
+<form action="@{Admin.deletePost(post.id)}" method="POST" accept-charset="utf-8">
+    <input id="deletePost" type="submit" value="&{'admin.edit_post.Delete_this_post'}"> &{'global.or'} <a href="@{Admin.index()}">&{'admin.edit_post.back'}</a>
+</form>

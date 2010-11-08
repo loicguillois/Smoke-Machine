@@ -1,0 +1,22 @@
+# Public 
+GET		/                                       Blog.index
+GET		/{slug}				                    Blog.show
+POST 	/{slug}/comments			    		Blog.newComment
+
+# Administration
+GET		/login                                  Admin.login
+POST	/login									Admin.authenticate
+POST	/logout                                 Admin.logout
+GET		/admin                                  Admin.index
+GET		/posts/new                              Admin.newPost
+POST	/posts                                  Admin.createPost
+GET		/posts/{<[0-9]+>id}/edit                Admin.editPost
+POST	/posts/{<[0-9]+>id}						Admin.savePost
+POST	/posts/{<[0-9]+>id}/delete 				Admin.deletePost
+
+# Modules
+GET     /rss                                    module:rss
+GET		/sitemap								module:sitemap
+
+# /public
+GET		/public/								staticDir:public

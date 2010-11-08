@@ -1,0 +1,50 @@
+# Global
+
+global.By=By
+global.Enter=Enter
+
+# Blog
+
+index.title=Home
+index.no_post=Sorry, there are currently no post
+
+blog.show.security.title=Security
+blog.show.security.sentence=Copy the numbers and letters
+blog.show.Comments=Comments
+blog.show.post_comment=Post a comment
+blog.show.No_comments=No comments
+blog.show.Your_name=Your name
+blog.show.Your_comment=Your comment
+blog.show.Post_your_comment=Post your comment &rarr;
+blog.show.Other_posts=Other posts
+
+blog.flash.wrong_security_code=Wrong security code
+
+# Admin
+
+admin.login.Administration_area=Administration area
+admin.logout=Logout &rarr;
+admin.login.password=What is the password ?
+admin.index.All_posts=All posts
+admin.index.plus_new_post=+ new post
+admin.index.No_post=The are no posts
+admin.index.Do_you_want_to=Do you want to
+admin.index.create_a_new_one=create a new one
+admin.new_post.New_post=New post
+admin.new_post.Title=Title
+admin.new_post.Content=Content
+admin.new_post.Create_it=Create it &rarr;
+
+admin.edit_post.Edit_post=Edit post (%s)
+admin.edit_post.Save_it=Save it &rarr;
+admin.edit_post.Delete_this_post=or delete this post
+
+admin.flash.wrong_password=Wrong password
+admin.flash.disconnected=You are now disconnected
+admin.flash.post_deleted=The post has been deleted
+admin.flash.post_created=The post has been created
+admin.flash.post_saved=The post has been saved
+
+# Footer
+
+footer.text=© 2009 Loïc Guillois - Licence <a href="http://creativecommons.org/licenses/by-sa/2.0/fr/deed.en_US">Creative Commons</a> - Website powered by <a href="http://www.playframework.org">Play!</a> and hosted in the <a href="http://code.google.com/appengine">Google App Engine</a> cloud.

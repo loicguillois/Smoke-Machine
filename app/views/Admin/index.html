@@ -1,0 +1,25 @@
+#{extends 'content.html' /}
+
+
+#{if posts}
+<h1>&{'admin.index.All_posts'}</h1>
+
+<div id="newPost">
+    <a href="@{Admin.newPost}">&{'admin.index.plus_new_post'}</a>
+</div>
+
+<ul class="list">
+    #{list items:posts, as:'post'}
+        <li><a href="@{Admin.editPost(post.id)}">${post.title}</a></li>
+    #{/list}
+</ul>
+
+<div style="clear:both;" />
+#{/if}
+
+#{else}
+<h1>&{'admin.index.No_post'}</h1>
+<p>
+    &{'admin.index.Do_you_want_to'} <a id="newPost" href="@{Admin.newPost}">&{'admin.index.create_a_new_one'}</a> ?
+</p>
+#{/else}

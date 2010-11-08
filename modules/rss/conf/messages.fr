@@ -1,0 +1,3 @@
+rss.comments_of=Les commentaires de
+rss.post_list=Liste des billets
+rss.comments=Les commentaires
