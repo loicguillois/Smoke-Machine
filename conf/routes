@@ -1,7 +1,5 @@
 # Public 
 GET		/                                       Blog.index
-GET		/{slug}				                    Blog.show
-POST 	/{slug}/comments			    		Blog.newComment
 
 # Administration
 GET		/login                                  Admin.login
@@ -20,3 +18,6 @@ GET		/sitemap								module:sitemap
 
 # /public
 GET		/public/								staticDir:public
+
+GET		/{slug}				                    Blog.show
+POST 	/{slug}/comments			    		Blog.newComment

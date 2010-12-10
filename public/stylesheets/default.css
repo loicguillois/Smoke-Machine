@@ -107,8 +107,8 @@ h1, h2, h3 {
     padding: 0;
     margin: 0;
     position: absolute;
-    top: 5px;
-    right: 30px;
+    top: 0px;
+    right: 0px;
 }
 
 #logout input {

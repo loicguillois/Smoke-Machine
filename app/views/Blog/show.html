@@ -6,38 +6,17 @@
     ${post.content.nl2br()}
 </p>
 
-#{if comments}
-<h3>&{'blog.show.Comments'} (<a href="#" onclick="$('#commentForm').show();">&{'blog.show.post_comment'}</a>)</h3>
-<ul id="comments">
-    #{list items:comments, as:'comment'}
-    <li>
-        <strong>&{'global.By'} ${comment.author} (${comment.date.format("dd")} &{'global.month'+ comment.date.format("MM")} ${comment.date.format("yyyy")})</strong>
-        <p>
-            ${comment.comment}
-        </p>
-    </li>
-    #{/list}
-</ul>
-#{/if}
-#{else}
-<h3>&{'blog.show.No_comments'} (<a href="#" onclick="$('#commentForm').show();">&{'blog.show.post_comment'}</a>)</h3>
-#{/else}
-
-<form id="commentForm" action="@{Blog.newComment(post.slug)}" method="POST" accept-charset="utf-8">
-    <p>
-        <label for="author">&{'blog.show.Your_name'}</label>
-        <input type="text" name="author" value="" id="author">
-    </p>
-
-    <p>
-        <label for="comment">&{'blog.show.Your_comment'}</label><br />
-        <textarea name="comment" rows="3" cols="40"></textarea>
-    </p>
-
-    <input type="hidden" name="uuid" value="${uuid}"/>
-
-    <p><input type="submit" value="&{'blog.show.Post_your_comment'}"></p>
-</form>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'blog-lgu';
+    var disqus_identifier = 'post_id_${post.id}';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Veuillez activer Javascript pour accéder aux <a href="http://disqus.com/?ref_noscript">commentaires.</a></noscript>
 
 #{if posts}
 <h2 id="archives" class="heading">&{'blog.show.Other_posts'}</h2>

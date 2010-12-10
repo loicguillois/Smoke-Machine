@@ -22,9 +22,6 @@ public class Post extends Model {
 
 	public String slug;
 
-    @Filter("post")
-    public Query<Comment> comments;
-
     public Post(String title, String content) {
         this.setTitle(title);
         this.content = (content.length() > MAX_LENGTH ? content.substring(0, MAX_LENGTH) : content);
@@ -36,12 +33,6 @@ public class Post extends Model {
 		this.slug = JavaExtensions.slugify(title);
 	}
 
-    public void addComment(String author, String comment) {
-        Comment c = new Comment(this, author, comment);
-        c.insert();
-        this.update();
-    }
-
     public static Query<Post> all() {
         return Model.all(Post.class);
     }
@@ -50,15 +41,8 @@ public class Post extends Model {
         return all().filter("id", id).get();
     }
 
-    public Collection<Comment> comments() {
-        return comments.order("date").fetch();
-    }
-
     @Override
     public void delete() {
-        for(Comment comment : comments()) {
-            comment.delete();
-        }
         super.delete();
     }
 }

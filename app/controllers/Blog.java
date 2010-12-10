@@ -5,11 +5,6 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import models.*;
 import java.util.*;
-import javax.imageio.ImageIO;
-import nl.captcha.obscurity.backgrounds.DefaultBackgroundImp;
-import nl.captcha.obscurity.gimpy.RippleGimpyRenderer;
-import nl.captcha.obscurity.text.renderer.DefaultWordRenderer;
-import nl.captcha.text.producer.DefaultTextProducer;
 import play.Play;
 import play.cache.Cache;
 import play.i18n.Messages;
@@ -37,15 +32,7 @@ public class Blog extends Controller {
         notFoundIfNull(post);
         List<Post> posts = Post.all().order("-date").fetch();
         posts.remove(post);
-        Collection<Comment> comments = post.comments();
-        render(post, comments, posts);
-    }
-
-    public static void newComment(String slug, String author, String comment) {
-        Post post = Post.all().filter("slug", slug).get();
-        notFoundIfNull(post);
-        post.addComment(author, comment);
-        show(post.slug);
+        render(post, posts);
     }
 }
 

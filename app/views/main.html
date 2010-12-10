@@ -9,12 +9,11 @@
         <script src="/public/javascripts/jquery-1.2.6.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="/public/javascripts/jquery.nospam.js" type="text/javascript" charset="utf-8"></script>
 	    <link rel="alternate" type="application/rss+xml" title="&{'blog.rss.posts'}" href="@{RSS.posts()}" />
-	    <link rel="alternate" type="application/rss+xml" title="&{'blog.rss.comments'}" href="@{RSS.comments()}" />
     </head>
     <body>
         <script type="text/javascript">
             $(document).ready(function() {
-                $('a.email').nospam();
+                $('.nospam').nospam();
             });
         </script>
         #{doLayout /} 	
