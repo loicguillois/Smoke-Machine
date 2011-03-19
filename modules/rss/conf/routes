@@ -1,3 +1,1 @@
-GET     /posts                  RSS.posts
-GET     /comments				RSS.comments
-GET     /comments/{<[0-9]+>id}  RSS.comments
+GET     /billets                  RSS.posts

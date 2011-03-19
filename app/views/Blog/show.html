@@ -23,7 +23,7 @@
 
 <ul class="list">
     #{list items:posts, as:'post'}
-    <li><a href="@{Blog.show(post.id)}">${post.title}</a><span class="date">${post.date.format("dd")} &{'global.month'+ post.date.format("MM")} ${post.date.format("yyyy")}</span><div style="clear: both;"></div></li>
+    <li><a href="@{Blog.show(post.slug)}">${post.title}</a><span class="date">${post.date.format("dd")} &{'global.month'+ post.date.format("MM")} ${post.date.format("yyyy")}</span><div style="clear: both;"></div></li>
     #{/list}
 </ul>
 #{/if}
