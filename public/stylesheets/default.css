@@ -101,6 +101,7 @@ h1, h2, h3 {
 #content {
     background: #fff;
     padding: 0px 5px;
+	font-size: 13px;
 }
 
 #logout {
@@ -253,6 +254,7 @@ form #title {
 }
 
 #pcontent {
+	height: 500px;
     width: 100%;
 }
 
