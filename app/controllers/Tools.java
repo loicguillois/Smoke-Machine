@@ -7,9 +7,18 @@ import models.*;
 import java.util.*;
 import java.text.*;
 
-public class Sitemap extends Controller {
+public class Tools extends Controller {
 
-	public static void getMap() {
+	@Before
+	private static void setHeaders() {
+		response.cacheFor("2h");
+	}
+
+	public static void robots() {
+		renderText("Sitemap: " + Router.getFullUrl("Tools.sitemap"));
+	}
+
+	public static void sitemap() {
 		try {
 			Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();	
 			Element root = (Element) doc.createElement("urlset"); 
@@ -22,7 +31,7 @@ public class Sitemap extends Controller {
 				// Location
 				Element postLocElement = (Element)doc.createElement("loc"); 
 				HashMap map = new HashMap();
-				map.put("id", post.id);
+				map.put("slug", post.slug);
 				String url = Router.getFullUrl("Blog.show", map);
 				postLocElement.appendChild(doc.createTextNode(url));
 				postElement.appendChild(postLocElement);

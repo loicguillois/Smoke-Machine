@@ -11,6 +11,11 @@ import play.mvc.Http.Request;
 
 public class RSS extends Controller {
 
+	@Before
+	private static void setHeaders() {
+		response.cacheFor("2h");
+	}
+
     public static void posts() {
         List<Post> posts  = Post.all().order("-date").fetch(15);
         try {

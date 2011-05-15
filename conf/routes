@@ -14,7 +14,8 @@ POST	/posts/{<[0-9]+>id}/delete 				Admin.deletePost
 
 # Modules
 GET     /rss/billets                  			RSS.posts
-GET     /sitemap.xml							Sitemap.getMap
+GET     /sitemap.xml							Tools.sitemap
+GET		/robots.txt								Tools.robots
 
 # /public
 GET		/public/								staticDir:public

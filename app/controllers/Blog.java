@@ -17,6 +17,7 @@ public class Blog extends Controller {
     @Before
     static void configure() {
         renderArgs.put("blogTitle", Play.configuration.getProperty("smoke.blog.title", "Blog"));
+		response.cacheFor("1h");
     }
 
     public static void index() {
