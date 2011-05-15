@@ -4,18 +4,19 @@
     <head>
         <title>#{get 'title' /}</title>		
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link rel="stylesheet" type="text/css" media="screen" href="/public/stylesheets/default.css" />
-        <link rel="shortcut icon" type="image/png" href="/public/images/favicon.png" />
-        <script src="/public/javascripts/jquery-1.2.6.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="/public/javascripts/jquery.nospam.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="http://dl.dropbox.com/u/2348614/blog/public/stylesheets/default.css" />
+        <link rel="shortcut icon" type="image/png" href="http://dl.dropbox.com/u/2348614/blog/public/images/favicon.png" />
+        <script src="http://dl.dropbox.com/u/2348614/blog/public/javascripts/jquery-1.2.6.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="http://dl.dropbox.com/u/2348614/blog/public/javascripts/jquery.nospam.js" type="text/javascript" charset="utf-8"></script>
 	    <link rel="alternate" type="application/rss+xml" title="&{'blog.rss.posts'}" href="@{RSS.posts()}" />
-    </head>
-    <body>
-        <script type="text/javascript">
+	    <script type="text/javascript">
             $(document).ready(function() {
                 $('.nospam').nospam();
             });
         </script>
+    </head>
+    <body>
+	<a href="http://github.com/loicguillois/Smoke-Machine"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/edc6dae7a1079163caf7f17c60495bbb6d027c93/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
         #{doLayout /} 	
 		#{analytics /}
     </body>

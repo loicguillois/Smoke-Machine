@@ -1,18 +1,8 @@
 body {
-    -moz-background-clip:border;
-    -moz-background-inline-policy:continuous;
-    -moz-background-origin:padding;
-    -x-system-font:none;
     background: #000000 url(/public/images/back.jpg) repeat-x scroll 0 0;
     color:#666666;
     font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;
     font-size:12px;
-    font-size-adjust:none;
-    font-stretch:normal;
-    font-style:normal;
-    font-variant:normal;
-    font-weight:normal;
-    line-height:normal;
 }
 
 img {
@@ -31,9 +21,6 @@ h1, h2, h3 {
 /** Layout **/
 
 #blog {
-    -moz-background-clip:border;
-    -moz-background-inline-policy:continuous;
-    -moz-background-origin:padding;
     background:#FFFFFF none repeat scroll 0 0;
     margin:auto auto 50px;
 	border: 4px solid #AAAAAA; 
