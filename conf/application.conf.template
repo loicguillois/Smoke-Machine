@@ -1,0 +1,12 @@
+application.name=smoke-machine
+
+application.mode=dev
+
+application.secret=6i4ExtskeaK5AplRe6zPu345OIQf6EtfZmBU732a4HbE14gE8iwE28IMzv5aBV6p
+
+application.langs=en,fr
+
+smoke.admin.password=xxxxxxxx
+smoke.blog.title=Loïc Guillois
+smoke.analytics.google=enabled
+smoke.analytics.google.tracker=UA-6187354-1
