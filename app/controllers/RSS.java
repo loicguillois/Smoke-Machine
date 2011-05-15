@@ -12,7 +12,7 @@ import play.mvc.Http.Request;
 public class RSS extends Controller {
 
     public static void posts() {
-        List<Post> posts  = Post.all().order("date").fetch(15);
+        List<Post> posts  = Post.all().order("-date").fetch(15);
         try {
             SyndFeed feed = new SyndFeedImpl();
             feed.setFeedType("rss_2.0");
