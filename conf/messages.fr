@@ -39,6 +39,10 @@ blog.flash.wrong_security_code=Mauvais code de s&eacute;curit&eacute;
 blog.rss.posts=RSS Billets
 blog.rss.comments=RSS Commentaires
 
+rss.comments_of=Les commentaires de
+rss.post_list=Liste des billets
+rss.comments=Les commentaires
+
 # Admin
 
 admin.login.Administration_area=Zone d'administration

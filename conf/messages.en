@@ -20,6 +20,9 @@ blog.show.Other_posts=Other posts
 
 blog.flash.wrong_security_code=Wrong security code
 
+rss.comments_of=Comments of
+rss.post_list=Post list
+
 # Admin
 
 admin.login.Administration_area=Administration area

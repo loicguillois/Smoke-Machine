@@ -13,8 +13,8 @@ POST	/posts/{<[0-9]+>id}						Admin.savePost
 POST	/posts/{<[0-9]+>id}/delete 				Admin.deletePost
 
 # Modules
-GET     /rss                                    module:rss
-GET		/sitemap								module:sitemap
+GET     /rss/billets                  			RSS.posts
+GET     /sitemap.xml							Sitemap.getMap
 
 # /public
 GET		/public/								staticDir:public
