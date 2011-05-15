@@ -18,6 +18,7 @@ GET     /sitemap.xml							Sitemap.getMap
 
 # /public
 GET		/public/								staticDir:public
+GET		/favicon.ico							staticFile:/public/images/favicon.png
 
 GET		/{slug}				                    Blog.show
 POST 	/{slug}/comments			    		Blog.newComment
