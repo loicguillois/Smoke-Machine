@@ -71,4 +71,4 @@ admin.flash.post_saved=Le billet a &eacute;t&eacute enregistr&eacute;
 
 # Footer
 
-footer.text=© 2009 Loïc Guillois - Licence <a href="http://creativecommons.org/licenses/by-sa/2.0/fr/deed.fr">Creative Commons</a> - Site propulsé par <a href="http://www.playframework.org">Play!</a> et hébergé dans le nuage <a href="http://code.google.com/appengine">Google App Engine</a>.
+footer.text=© 2009 Loïc Guillois - Licence <a href="http://creativecommons.org/licenses/by-sa/2.0/fr/deed.fr">Creative Commons</a> - Site propulsé par <a href="http://www.playframework.org">Play! framework</a> et hébergé chez <a href="http://www.ikoula.com">iKoula</a>.
